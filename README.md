@@ -8,13 +8,13 @@ Access browser `localStorage` and `sessionStorage` using simple, reactive-like f
 ### 📦 Installation
 
 ```bash
-npm i re-storage
+npm i @imtapan/re-storage
 ```
 
 Or using Yarn:
 
 ```bash
-yarn add re-storage
+yarn add @imtapan/re-storage
 ```
 
 ---
