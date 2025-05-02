@@ -1,34 +1,9 @@
 {
-  "name": "@imtapan/re-storage",
-  "description": "A simple and lightweight library for managing local storage in JavaScript applications.",
-  "version": "1.0.0",
-  "type": "module",
-  "author": {
-    "name": "imTapan"
+  "name": "re-storage",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
   },
-  "main": "dist/re-storage.umd.js",
-  "module": "dist/re-storage.es.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "LICENSE"
-  ],
-  "exports": {
-    ".": {
-      "import": "./dist/re-storage.es.js",
-      "require": "./dist/re-storage.umd.js"
-    }
-  },
-  "scripts": {
-    "build": "tsc && vite build",
-    "publish": "npm publish --access=public"
-  },
-  "devDependencies": {
-    "typescript": "^5.8.3",
-    "vite": "^6.3.1"
-  },
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  }
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
 }
