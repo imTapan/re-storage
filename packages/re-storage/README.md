@@ -25,11 +25,11 @@ yarn add @imtapan/re-storage
 import { useLocalStorage, useSessionStorage } from "re-storage";
 
 const local = useLocalStorage("myKey", "defaultValue");
-local.set("newValue");
+local.set("key", "newValue");
 console.log(local.get()); // 'newValue'
 
 const session = useSessionStorage("sessionKey", { loggedIn: false });
-session.set({ loggedIn: true });
+session.set("saveKey", { loggedIn: true });
 console.log(session.get()); // { loggedIn: true }
 ```
 
@@ -72,7 +72,7 @@ import { useLocalStorage } from 're-storage';
 const theme = useLocalStorage('theme', 'light');
 
 function toggleTheme() {
-  theme.set(theme.get() === 'light' ? 'dark' : 'light');
+  theme.set("theme", theme.get() === 'light' ? 'dark' : 'light');
 }
 </script>
 ```
