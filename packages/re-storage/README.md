@@ -26,11 +26,11 @@ import { useLocalStorage, useSessionStorage } from "re-storage";
 
 const local = useLocalStorage("myKey", "defaultValue");
 local.set("key", "newValue");
-console.log(local.get()); // 'newValue'
+console.log(local.get());
 
 const session = useSessionStorage("sessionKey", { loggedIn: false });
 session.set("saveKey", { loggedIn: true });
-console.log(session.get()); // { loggedIn: true }
+console.log(session.get());
 ```
 
 ---

@@ -37,6 +37,5 @@ function createStorage(type: "localStorage" | "sessionStorage") {
   };
 }
 
-// ✅ Final Exports — now you don't pass the key to get/set
 export const useLocalStorage = createStorage("localStorage");
 export const useSessionStorage = createStorage("sessionStorage");
